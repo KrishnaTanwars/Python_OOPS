@@ -2,11 +2,12 @@
 class employee:
     # Special method/ magic method/ dunder method - constructor
     def __init__(self):
-        print("started excecuting attribiutes/data")
+        print(id(self))
+        # print("started excecuting attribiutes/data")
         self.id = 123
         self.salary = 50000
         self.designation = "MLE"
-        print("attributes/data have been initiated")
+        # print("attributes/data have been initiated")
     
     def travel(self,destination):
         print("This travel method was called manually")
@@ -14,11 +15,14 @@ class employee:
 
 # Create an instance/object of the class
 sam = employee()
+sam.name = "Krishna"
+print(sam.name)
+print(id(sam))
 
 # Printing an attribute
 # print(sam.salary)
 
 # Calling a method
-sam.travel("Delhi")
+# sam.travel("Delhi")
 
-print(type(sam))
+# print(type(sam))
